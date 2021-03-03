@@ -63,6 +63,23 @@
     </header>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+    <script>
+        (function ($) {
+            "use strict";
+            var NAV = {};
+            NAV.MenuTogglerClose = function () {
+                $(".toggler-menu").on('click', function () {
+                    $('.header-left').stop().toggleClass('menu-open');
+                });
+                $('.header-left a').on("click", function () {
+                    var toggle = $('.toggler-menu');
+                });
+            }
+            $(document).on('ready', function () {
+                NAV.MenuTogglerClose();
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>
