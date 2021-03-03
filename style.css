@@ -24,3 +24,19 @@ a:hover {
   text-decoration: none;
 }
 
+/* Mob-header */
+.navbar-brand a img {
+  width: 250px;
+  height: auto;
+}
+
+/* header-left */
+.header-left {
+  width: 80px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background: #0c0c14;
+  background-repeat: 1px solid rgba(11, 11, 19, 0.1);
+  z-index: 99;
+}
