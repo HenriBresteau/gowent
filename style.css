@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   outline: none !important;
 }
@@ -163,7 +163,7 @@ button.toggler-menu {
   color: white;
   font-weight: 400;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .info label + label {
   margin-left: 40px;
@@ -201,7 +201,7 @@ button.toggler-menu {
 .box {
   padding-top: 190px;
   padding-bottom: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .box h6 {
@@ -209,7 +209,7 @@ button.toggler-menu {
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .box h1 {
   font-size: 80px;
@@ -217,7 +217,7 @@ button.toggler-menu {
   line-height: 1;
   margin: 0 0 20px;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .box .lead {
   color: white;
@@ -225,12 +225,12 @@ button.toggler-menu {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .box .desc {
   max-width: 450px;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .btn-bar {
   padding-top: 10px;
@@ -244,7 +244,7 @@ button.toggler-menu {
   text-decoration: none;
   padding-left: 0;
   transition: ease all 0.35s;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .btn-bar a::after {
   content: "";
@@ -263,4 +263,27 @@ button.toggler-menu {
 }
 .btn-bar a:hover::after {
   width: 40px;
+}
+
+@media (max-width: 991px) {
+  .banner .me {
+    opacity: 0.4;
+    width: 80vw;
+  }
+}
+@media (max-width: 767px) {
+  .banner .top-fixed {
+    display: none !important;
+  }
+  .banner .box h6 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .banner .box h1 {
+    font-size: 50px;
+  }
+  .banner .box .lead {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
