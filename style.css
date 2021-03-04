@@ -287,3 +287,102 @@ button.toggler-menu {
     margin-bottom: 15px;
   }
 }
+
+/* ABOUT */
+#about {
+  font-family: "Poppins", sans-serif;
+}
+.about-me img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  position: relative;
+  width: 50%;
+}
+.about-me .social-icons {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+}
+.about-me .social-icons a {
+  width: 45px;
+  height: 45px;
+  line-height: 41px;
+  background: #0b0b13;
+  border: 2px solid white;
+  color: #0b0b13;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+  transition: ease all 0.35s;
+  transform: scale(1);
+  margin-top: -160px;
+}
+.about-me .social-icons a i {
+  line-height: inherit;
+  color: white;
+}
+.about-me .social-icons a:nth-child(1) {
+  top: -25px;
+}
+.about-me .social-icons a:nth-child(2) {
+  top: -8px;
+}
+.about-me .social-icons a:nth-child(4) {
+  top: -8px;
+}
+.about-me .social-icons a:nth-child(5) {
+  top: -25px;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #d20020;
+}
+.info {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  width: 300px;
+  margin-left: 7%;
+}
+.info h3 {
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+.info p {
+  margin: 0;
+  font-size: 16px;
+}
+.info-list {
+  padding-top: 15px;
+  color: white;
+}
+.info-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.info-list li {
+  padding: 4px 0;
+}
+.info-list label {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+/* What i do ? */
+.separated {
+  background-image: url(./img/separator-line.png);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box1{
+color: #ffc107;
+}
