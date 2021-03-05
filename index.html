@@ -320,6 +320,34 @@
             });
         })(jQuery);
     </script>
+    <script>
+        $(function () {
+            var $grid = $('#tp-grid'),
+                $name = $('#name'),
+                $close = $('#close'),
+                $loader = $('').insertBefore($grid),
+                stapel = $grid.stapel({
+                    randomAngle: true,
+                    delay: 50,
+                    gutter: 70,
+                    pileAngles: 3,
+                    onLoad: function () {
+                        $loader.remove();
+                    },
+                    onBeforeOpen: function (pileName) {
+                        $name.html(pileName);
+                    },
+                    onAfterOpen: function (pileName) {
+                        $close.show();
+                    }
+                });
+            $close.on('click', function () {
+                $close.hide();
+                $name.empty();
+                stapel.closePile();
+            })
+        });
+    </script>
 </body>
 
 </html>
