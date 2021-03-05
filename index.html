@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/css/prettyPhoto.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./img/library/cubeportfolio.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -570,6 +571,43 @@
     <script src="./img/library/modernizr.custom.63321.js"></script>
     <script src="./img/library/jquery.stapel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script>
+    <script src="/img/library/jquery.cubeportfolio.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            "use strict";
+            $('#flat').cubeportfolio({
+                filters: '#flat',
+                layoutMode: 'mosaic',
+                sortByDimension: true,
+                mediaQueries: [{
+                    width: 1300,
+                    cols: 6,
+                }, {
+                    width: 1100,
+                    cols: 6,
+                }, {
+                    width: 920,
+                    cols: 6,
+                }, {
+                    width: 400,
+                    cols: 1,
+                    options: {
+                        gapHorizontal: 15,
+                        gapVertical: 15
+                    }
+                }],
+                defaultFilter: '*',
+                animationType: 'fadeOutTop',
+                gapHorizontal: 0,
+                gapVertical: 0,
+                gridAdjustement: 'responsive',
+                caption: 'zoom',
+                lightboxDelegate: '.cbp-lightbox',
+                lightboxGallery: true,
+                lightboxTitleSrc: "data-title",
+            });
+        });
+    </script>
     <script>
         (function ($) {
             "use strict";
