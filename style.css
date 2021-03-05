@@ -446,3 +446,80 @@ button.toggler-menu {
 .title {
   color: white;
 }
+
+/* WORKS */
+#wrap {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.wrapper {
+  position: relative;
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+}
+.wrapper img {
+  width: 395px;
+  height: 600px;
+}
+.topbar {
+  position: relative;
+  padding: 20px 0;
+  margin: 0 0 40px;
+}
+.back {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  color: #999;
+  background: #ddd;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+.tp-grid {
+  list-style: none;
+  position: relative;
+  display: block;
+}
+.tp-grid li {
+  position: absolute;
+  cursor: pointer;
+  border: 5px solid white;
+  display: none;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.no-js .tp-grid li {
+  position: relative;
+  display: inline-block;
+}
+.tp-grid li a {
+  display: block;
+  outline: none;
+}
+.tp-grid li img {
+  display: block;
+  border: none;
+}
+.tp-info {
+  position: absolute;
+  background: white;
+  line-height: 20px;
+  color: #292929;
+  font-size: 22px;
+  line-height: 26px;
+  top: 40%;
+  width: 75%;
+  padding: 10px;
+  font-weight: 400;
+  text-align: right;
+  left: -100%;
+}
